@@ -25,7 +25,7 @@ const BookType = new GraphQLObjectType({
 
 // route queries are initial entry points into Graph
 const RootQuery = new GraphQLObjectType({
-  name: 'RoorQueryType',
+  name: 'RootQueryType',
   fields: {
     book: {
       type: BookType,

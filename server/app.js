@@ -7,7 +7,8 @@ const app = express();
 const graphqlHTTP = graphqlExpress.graphqlHTTP
 
 app.use('/graphql', graphqlHTTP({
-  schema
+  schema,
+  graphiql: true,
 }))
 
 // express listen to port 4000
