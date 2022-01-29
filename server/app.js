@@ -1,7 +1,13 @@
 // require express
 const express = require('express');
+const graphqlExpress = require('express-graphql');
 
 const app = express();
+const graphqlHTTP = graphqlExpress.graphqlHTTP
+
+app.use('/graphql', graphqlHTTP({
+
+}))
 
 // express listen to port 4000
 app.listen(4000, () => {
