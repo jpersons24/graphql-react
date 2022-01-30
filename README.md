@@ -27,6 +27,8 @@ You can then start installing the needed dependencies and setting up the basic s
 >   npm install express
 >   npm install graphql
 >   npm install express-graphql
+>   npm install nodemon
 > ```
 
-`express-graphql`_expects v 15.8.0_, you may get an error and need to change the graphql version being used if necessary.
+`express-graphql` _expects v 15.8.0_, you may get an error and need to change the graphql version being used if necessary.
+`nodemon` will listen for changes to your code and refresh the server when changes are detected. This way you won't need to stop and restart the server every time you make changes

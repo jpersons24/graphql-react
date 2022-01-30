@@ -1,9 +1,7 @@
 const graphql = require('graphql');
 const _ = require('lodash');
 
-
-// define schema to describe data in graphql graph
-
+// destructured graphql types
 const { 
   GraphQLObjectType, 
   GraphQLString, 
@@ -29,6 +27,7 @@ var authors = [
 	{ name: "Terry Pratchett", age: 66, id: '3' },
 ];
 
+// data types
 const BookType = new GraphQLObjectType({
 	name: "Book",
 	fields: () => ({
@@ -100,6 +99,7 @@ const RootQuery = new GraphQLObjectType({
 	},
 });
 
+// export schema to export
 module.exports = new GraphQLSchema({
   query: RootQuery
 });
